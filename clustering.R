@@ -2,7 +2,7 @@ rm(list=ls()) # probably should not run this if you are using seperate files for
 
 library(cluster)
 
-components = pr.out$x[, trio_5d]
+components = pr.out$x[, 1:5] # however many components used
 Knum = 3 # number of clusters, can optimize this later
 
 km.out = kmeans(components, Knum, nstart=20) 
