@@ -1,4 +1,5 @@
 library(readr)
+library(data.table)
 
 Temperature_water <- read_csv("Temperature, water Kenai River Baseline Data.csv")
 #View(Temperature_water_Kenai_River_Baseline_Data)
@@ -128,11 +129,11 @@ date_aresenic <- Arsenic$activity_start_date
 measured_arsenic <- Arsenic$result_measure_value 
 arsenic_unit <-  Arsenic$result_measure_measure_unit_code
 
-identical(as.integer(date_aresenic, date_cadmium,date_chromium, 
-          date_copper, date_lead, date_zinc, date_calcium, date_iron,
-          date_magnesium, date_nitrate_nitrate, date_phosphorous, 
-          date_benzene, date_fecal, date_ph, date_conductance, 
-          date_susp_solids, date_turbidity, date_temp))
+#identical(as.integer(date_aresenic, date_cadmium,date_chromium, 
+         # date_copper, date_lead, date_zinc, date_calcium, date_iron,
+          #date_magnesium, date_nitrate_nitrate, date_phosphorous, 
+          #date_benzene, date_fecal, date_ph, date_conductance, 
+          #date_susp_solids, date_turbidity, date_temp))
 
 date_list <- list(as.integer(
   date_aresenic, date_cadmium,date_chromium, 
@@ -169,12 +170,12 @@ chemicals_unit <- c(arsenic_unit, cadmium_unit,chromium_unit,
                             benzene_unit, fecal_unit, ph_unit, conductance_unit, 
                              susp_solids_unit, turbidity_unit, temp_unit)
 
-wq_data_frame <- data.frame(
-  date = date_aresenic,
-  chemical = chemical_name, 
-  concentration = chemicals_kwf,
-  unit = chemicals_unit
-)
+#wq_data_frame <- data.frame(
+  #date = date_aresenic,
+  #chemical = chemical_name, 
+  #concentration = chemicals_kwf,
+  #unit = chemicals_unit
+#)
 
 #we should still add sediment data to this, as well as flow rate and river temp. 
 #but this is the general framework
@@ -257,9 +258,23 @@ wq_wide <- wq_wide %>%
     )
   )
 
+
+#WQ WIDE DATA TABLE FOR USE IN CLUSTERING AND PCA
+
+setDT(wq_wide)
+
+wq_wide[, Year := as.numeric(substr(date, 1, 4))]
+
+wq_wide[, date := NULL]
+
+setcolorder(wq_wide, "Year")
+
+View(wq_wide)
 #this wq_wide is our data frame that we can use for clustering. 
 
 
 View(wq_wide)
 
+#THIS IS WQ DATA WITHOUT DATE. IF YOU WANT IT WITH DARE JUST GO ABOVE TO VIEW WQ WIDE AND THE 
+#LINES THAT MAKE THAT DF. 
 pca_data <- wq_wide[, -1]
