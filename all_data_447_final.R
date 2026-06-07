@@ -33,5 +33,7 @@ setkey(wq_wide, Year)
 
 #merged_df_chinook <- wq_wide[chinook_escapement, on = .(date), roll = TRUE]
 merged_df_chinook <- wq_wide[chinook_escapement, on = .(Year)]
-
+merged_df_chinook <- merged_df_chinook %>% 
+  select(-date)
 pca_chinook_all_data <- merged_df_chinook[, -1]
+
