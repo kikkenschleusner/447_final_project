@@ -1,0 +1,294 @@
+monitoringLocationIdentifier,characteristicGroup,characteristic,characteristicUserSupplied,resultCount,activityCount,firstActivity,mostRecentActivity
+USGS-15266300,Biological,"Biomass, periphyton","Biomass of periphyton, ash mass",1,1,2001-05-10,2001-05-10
+USGS-15266300,Biological,"Biomass, periphyton","Biomass of periphyton, ash-free dry mass",1,1,2001-05-10,2001-05-10
+USGS-15266300,Biological,"Biomass, periphyton","Biomass of periphyton, dry mass",1,1,2001-05-10,2001-05-10
+USGS-15266300,Biological,Biomass/chlorophyll ratio,"Biomass/chlorophyll ratio, periphyton in biofilm",1,1,2001-05-10,2001-05-10
+USGS-15266300,Biological,Chlorophyll a,"Chlorophyll a (Chl-a), periphyton in biofilm, chromatographic-fluorometric method",1,1,2001-05-10,2001-05-10
+USGS-15266300,Biological,Moisture content,"Moisture content, tissue (dry mass basis)",1,1,1998-05-05,1998-05-05
+USGS-15266300,Biological,Pheophytin a,"Pheophytin a, periphyton in biofilm",1,1,2001-05-10,2001-05-10
+USGS-15266300,Information,".alpha.-1,2,3,4,5,6-Hexachlorocyclohexane-D6 or alpha-HCH D6","alpha-Hexachlorocyclohexane-d6 (alpha-HCH-d6), surrogate, tissue",1,1,1998-05-05,1998-05-05
+USGS-15266300,Information,2-Fluorobiphenyl,"2-Fluorobiphenyl, surrogate, bed sediment, smaller than 2 millimeters, wet sieved (native water, field)",1,1,1998-05-05,1998-05-05
+USGS-15266300,Information,"3,5-Dichlorobiphenyl","Polychlorinated biphenyl (PCB) congener 14, surrogate, tissue",1,1,1998-05-05,1998-05-05
+USGS-15266300,Information,Agency analyzing sample,Agency analyzing sample,87,87,1998-05-05,2001-09-05
+USGS-15266300,Information,Altitude,Elevation of land surface,67,67,1952-05-21,1974-09-23
+USGS-15266300,Information,Horizontal location in cross section,"Horizontal location in cross section, distance from left bank looking downstream (DS)",126,126,1980-07-29,2020-08-05
+USGS-15266300,Information,Nitrobenzene-D5,"Nitrobenzene-d5, surrogate, bed sediment, smaller than 2 millimeters, wet sieved (native water, field)",1,1,1998-05-05,1998-05-05
+USGS-15266300,Information,Sampling depth,"Sampling depth, percent of total depth, at location in cross-section",10,10,1980-07-29,1980-07-29
+USGS-15266300,Information,Set number,"Set number, NWQL labcode 0113",22,22,1999-03-03,2000-09-27
+USGS-15266300,Information,Set number,"Set number, NWQL labcode 0305",21,21,1999-05-06,2000-09-27
+USGS-15266300,Information,Set number,"Set number, NWQL schedule 2101",1,1,1998-05-05,1998-05-05
+USGS-15266300,Information,Set number,"Set number, NWQL schedule 2502",1,1,1998-05-05,1998-05-05
+USGS-15266300,Information,Weight of sample,"Weight of sample, NWQL schedule 2101",1,1,1998-05-05,1998-05-05
+USGS-15266300,Information,p-Terphenyl-d14,"p-Terphenyl-d14, surrogate, bed sediment, smaller than 2 millimeters, wet sieved (native water, field)",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Major, Metals",Calcium,"Calcium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Major, Metals",Calcium,"Calcium, water, filtered",81,81,1952-05-21,2001-09-05
+USGS-15266300,"Inorganics, Major, Metals",Magnesium,"Magnesium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Major, Metals",Magnesium,"Magnesium, water, filtered",81,81,1952-05-21,2001-09-05
+USGS-15266300,"Inorganics, Major, Metals",Potassium,"Potassium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Major, Metals",Potassium,"Potassium, water, filtered",77,77,1953-01-30,2001-09-05
+USGS-15266300,"Inorganics, Major, Metals",Sodium,"Sodium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Major, Metals",Sodium,"Sodium, water, filtered",77,77,1953-01-30,2001-09-05
+USGS-15266300,"Inorganics, Major, Metals",Sodium adsorption ratio [(Na)/(sq root of 1/2 Ca + Mg)],"Sodium adsorption ratio (SAR), water",77,77,1953-01-30,2001-09-05
+USGS-15266300,"Inorganics, Major, Metals",Sodium plus potassium,"Sodium plus potassium as sodium, water, filtered",3,3,1952-05-21,1952-07-25
+USGS-15266300,"Inorganics, Major, Metals","Sodium, percent total cations","Sodium fraction of cations, water",77,77,1953-01-30,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals","Acidity, (H+)","Hydrogen ion, water, unfiltered, calculated",127,127,1952-05-21,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Alkalinity,"Acid neutralizing capacity (ANC) as calcium carbonate, water, unfiltered, fixed endpoint (EP) (pH 4.5) titration, field",80,80,1952-05-21,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Alkalinity,"Acid neutralizing capacity (ANC) as calcium carbonate, water, unfiltered, fixed endpoint (EP) (pH 4.5) titration, laboratory",3,3,1998-10-07,1999-01-07
+USGS-15266300,"Inorganics, Major, Non-metals",Alkalinity,"Alkalinity as calcium carbonate, water, filtered, fixed endpoint (EP) (pH 4.5) titration, laboratory",33,33,1999-03-03,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Alkalinity,"Alkalinity as calcium carbonate, water, filtered, inflection-point titration, field",38,38,1998-10-07,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Bicarbonate,"Bicarbonate as bicarbonate, water, filtered, inflection-point titration, field",38,38,1998-10-07,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Bicarbonate,"Bicarbonate as bicarbonate, water, unfiltered, fixed endpoint (EP) (pH 4.5) titration, field",45,45,1952-05-21,1971-03-24
+USGS-15266300,"Inorganics, Major, Non-metals",Carbon,"Total carbon (inorganic + organic carbon), bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Major, Non-metals",Carbon,"Total carbon (inorganic + organic carbon), bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Major, Non-metals",Carbon,"Total carbon (inorganic + organic carbon), suspended sediment",14,14,2000-09-06,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Carbon dioxide,"Carbon dioxide, water, unfiltered",83,83,1952-05-21,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Carbonate,"Carbonate as carbonate, water, unfiltered, fixed endpoint (EP) (pH 8.3) titration, field",41,41,1952-05-21,1971-01-28
+USGS-15266300,"Inorganics, Major, Non-metals",Chloride,"Chloride, water, filtered",80,80,1952-05-21,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Dissolved oxygen (DO),"Dissolved oxygen (DO), water, unfiltered",79,79,1998-05-05,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Dissolved oxygen saturation,"Dissolved oxygen (DO) saturation, water, unfiltered",78,78,1998-05-05,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Fluoride,"Fluoride, water, filtered",81,81,1952-05-21,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Inorganic carbon,"Inorganic carbon, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Major, Non-metals",Inorganic carbon,"Inorganic carbon, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Major, Non-metals",Inorganic carbon,"Inorganic carbon, suspended sediment",6,6,2000-09-06,2001-03-07
+USGS-15266300,"Inorganics, Major, Non-metals",Silica,"Silica as silicon dioxide, water, filtered",81,81,1952-05-21,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Sulfate,"Sulfate, water, filtered",81,81,1952-05-21,2001-09-05
+USGS-15266300,"Inorganics, Major, Non-metals",Sulfur,"Sulfur, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Aluminum,"Aluminum, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Aluminum,"Aluminum, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Barium,"Barium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Barium,"Barium, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Beryllium,"Beryllium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Beryllium,"Beryllium, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Bismuth,"Bismuth, bed sediment (dry mass basis), smaller than 177 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Cadmium,"Cadmium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Cadmium,"Cadmium, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Cerium,"Cerium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Chromium,"Chromium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Chromium,"Chromium, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Cobalt,"Cobalt, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Cobalt,"Cobalt, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Copper,"Copper, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Copper,"Copper, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Europium,"Europium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Gallium,"Gallium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Gold,"Gold, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Holmium,"Holmium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Iron,"Iron, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Iron,"Iron, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Iron,"Iron, water, filtered",38,38,1971-01-28,2001-09-05
+USGS-15266300,"Inorganics, Minor, Metals",Iron,"Iron, water, unfiltered",43,43,1952-05-21,1970-08-09
+USGS-15266300,"Inorganics, Minor, Metals",Lanthanum,"Lanthanum, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Lead,"Lead, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Lead,"Lead, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Lithium,"Lithium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Manganese,"Manganese, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Manganese,"Manganese, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Manganese,"Manganese, water, filtered",38,38,1971-01-28,2001-09-05
+USGS-15266300,"Inorganics, Minor, Metals",Manganese,"Manganese, water, unfiltered",23,23,1955-09-09,1970-08-09
+USGS-15266300,"Inorganics, Minor, Metals",Mercury,"Mercury, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Mercury,"Mercury, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Molybdenum,"Molybdenum, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Molybdenum,"Molybdenum, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Neodymium,"Neodymium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Nickel,"Nickel, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Nickel,"Nickel, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Niobium,"Niobium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Scandium,"Scandium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Silver,"Silver, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Silver,"Silver, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Strontium,"Strontium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Strontium,"Strontium, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Tantalum,"Tantalum, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Thallium,"Thallium, bed sediment (dry mass basis), smaller than 62.5 microns, dry sieved (laboratory), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Tin,"Tin, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Titanium,"Titanium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Vanadium,"Vanadium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Vanadium,"Vanadium, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Ytterbium,"Ytterbium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Yttrium,"Yttrium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Zinc,"Zinc, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Metals",Zinc,"Zinc, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Non-metals",Antimony,"Antimony, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Non-metals",Antimony,"Antimony, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Non-metals",Arsenic,"Arsenic, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Non-metals",Arsenic,"Arsenic, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Non-metals",Boron,"Boron, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Non-metals",Selenium,"Selenium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Inorganics, Minor, Non-metals",Selenium,"Selenium, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,Nutrient,Ammonia and ammonium,"Total ammonia (NH4+ and NH3) as ammonium, water, filtered",38,38,1969-11-07,2001-09-05
+USGS-15266300,Nutrient,Ammonia and ammonium,"Total ammonia (NH4+ and NH3) as nitrogen, water, filtered",38,38,1969-11-07,2001-09-05
+USGS-15266300,Nutrient,Inorganic nitrogen (nitrate and nitrite),"Nitrate plus nitrite as nitrogen, water, filtered",37,37,1998-10-07,2001-09-05
+USGS-15266300,Nutrient,Kjeldahl nitrogen,"Total ammonia (NH4+ and NH3) plus organic nitrogen as nitrogen, water, filtered",38,38,1998-10-07,2001-09-05
+USGS-15266300,Nutrient,Kjeldahl nitrogen,"Total ammonia (NH4+ and NH3) plus organic nitrogen as nitrogen, water, unfiltered",38,38,1998-10-07,2001-09-05
+USGS-15266300,Nutrient,Nitrate,"Nitrate as nitrate, water, filtered",80,80,1952-05-21,2001-09-05
+USGS-15266300,Nutrient,Nitrate,"Nitrate as nitrogen, water, filtered",80,80,1952-05-21,2001-09-05
+USGS-15266300,Nutrient,Nitrite,"Nitrite as nitrite, water, filtered",37,37,1998-10-07,2001-09-05
+USGS-15266300,Nutrient,Nitrite,"Nitrite as nitrogen, water, filtered",37,37,1998-10-07,2001-09-05
+USGS-15266300,Nutrient,Nitrogen,"Particulate nitrogen, water",15,15,2000-09-06,2001-09-05
+USGS-15266300,Nutrient,"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)","Total nitrogen (nitrate + nitrite + total ammonia + organic nitrogen) as nitrogen, water, filtered, calculated",37,37,1998-10-07,2001-09-05
+USGS-15266300,Nutrient,"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)","Total nitrogen (nitrate + nitrite + total ammonia + organic nitrogen) as nitrogen, water, unfiltered, calculated",37,37,1998-10-07,2001-09-05
+USGS-15266300,Nutrient,Organic Nitrogen,"Organic nitrogen as nitrogen, water, filtered",36,36,1998-10-07,2001-09-05
+USGS-15266300,Nutrient,Organic Nitrogen,"Organic nitrogen as nitrogen, water, unfiltered",37,37,1969-11-07,2001-09-05
+USGS-15266300,Nutrient,Orthophosphate,"Orthophosphate as orthophosphate, water, filtered",37,37,1998-10-07,2001-09-05
+USGS-15266300,Nutrient,Orthophosphate,"Orthophosphate as phosphorus, water, filtered",37,37,1998-10-07,2001-09-05
+USGS-15266300,Nutrient,Particulate nitrogen/particulate organic carbon,Particulate nitrogen to particulate organic carbon mass ratio,5,5,2000-09-06,2001-03-07
+USGS-15266300,Nutrient,Phosphate-phosphorus,"Phosphate as orthophosphate, water, unfiltered",1,1,1969-11-07,1969-11-07
+USGS-15266300,Nutrient,Phosphorus,"Phosphorus as phosphorus, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,Nutrient,Phosphorus,"Phosphorus as phosphorus, water, filtered",38,38,1998-10-07,2001-09-05
+USGS-15266300,Nutrient,Phosphorus,"Phosphorus as phosphorus, water, unfiltered",38,38,1998-10-07,2001-09-05
+USGS-15266300,"Organics, Other","1,2,4-Trichlorobenzene","1,2,4-Trichlorobenzene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other","1,2-Dimethylnaphthalene","1,2-Dimethylnaphthalene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other","1,3-Dichlorobenzene","1,3-Dichlorobenzene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other","1,6-Dimethylnaphthalene","1,6-Dimethylnaphthalene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",1-Methylfluorene,"1-Methyl-9H-fluorene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",1-Methylphenanthrene,"1-Methylphenanthrene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",1-Methylpyrene,"1-Methylpyrene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other","2,2'-Biquinoline","2,2'-Biquinoline, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other","2,3,6-Trimethylnaphthalene","2,3,6-Trimethylnaphthalene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other","2,4-Dinitrotoluene","2,4-Dinitrotoluene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other","2,6-Dimethylnaphthalene","2,6-Dimethylnaphthalene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other","2,6-Dinitrotoluene","2,6-Dinitrotoluene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",2-Chloronaphthalene,"2-Chloronaphthalene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",2-Ethylnaphthalene,"2-Ethylnaphthalene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",2-Methylanthracene,"2-Methylanthracene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other","3,5-Dimethylphenol","3,5-Dimethylphenol, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",4H-Cyclopenta[def]phenanthrene,"4H-Cyclopenta[def]phenanthrene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Acenaphthene,"Acenaphthene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Acenaphthylene,"Acenaphthylene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Acridine,"Acridine, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Anthracene,"Anthracene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Anthraquinone,"9,10-Anthraquinone, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",BDE-003,"4-Bromophenyl phenyl ether, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Benz[a]anthracene,"Benzo[a]anthracene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Benzo(b)fluoranthene,"Benzo[b]fluoranthene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Benzo[a]pyrene,"Benzo[a]pyrene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Benzo[c]cinnoline,"Benzo[c]cinnoline, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Benzo[ghi]perylene,"Benzo[ghi]perylene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Benzo[k]fluoranthene,"Benzo[k]fluoranthene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Bis(2-chloroethoxy)methane,"Bis(2-chloroethoxy)methane, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Butyl benzyl phthalate,"Benzyl n-butyl phthalate, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",C8-Alkylphenol,"C8-alkylphenol, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Chrysene,"Chrysene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Di(2-ethoxylhexyl) phthalate,"Bis(2-ethylhexyl) phthalate (DEHP), bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Di-n-octyl phthalate,"Di-n-octyl phthalate (DNOP), bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other","Dibenz[a,h]anthracene","Dibenzo[a,h]anthracene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Dibenzothiophene,"Dibenzothiophene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Dibutyl phthalate,"Di-n-butyl phthalate, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Diethyl phthalate,"Diethyl phthalate, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Dimethyl phthalate,"Dimethyl phthalate, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Fluoranthene,"Fluoranthene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Fluorene,"9H-Fluorene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other","Indeno[1,2,3-cd]pyrene","Indeno[1,2,3-cd]pyrene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Isophorone,"Isophorone, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Isoquinoline,"Isoquinoline, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Lipids,"Lipids, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",N-Nitrosodi-n-propylamine,"N-Nitrosodi-n-propylamine, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",N-Nitrosodiphenylamine,"N-Nitrosodiphenylamine, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Naphthalene,"Naphthalene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Nitrobenzene,"Nitrobenzene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Organic carbon,"Dissolved organic carbon (DOC), water, filtered",39,39,1998-10-07,2001-09-05
+USGS-15266300,"Organics, Other",Organic carbon,"Organic carbon, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Organic carbon,"Organic carbon, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Organic carbon,"Organic carbon, suspended sediment",31,31,1998-10-07,2001-03-07
+USGS-15266300,"Organics, Other",Phenanthrene,"Phenanthrene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Phenanthridine,"Phenanthridine, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Phenol,"Phenol, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Pyrene,"Pyrene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",Quinoline,"Quinoline, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",m-Nitrophenol,"3-Nitrophenol, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",o-Chlorophenol,"2-Chlorophenol, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",o-Dichlorobenzene,"1,2-Dichlorobenzene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",p-Chlorophenyl phenyl ether,"4-Chlorophenyl phenyl ether, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Other",p-Cresol,"p-Cresol, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, PCBs",Polychlorinated biphenyls,"Polychlorinated biphenyls (PCBs), tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",.alpha.-Hexachlorocyclohexane,"alpha-Hexachlorocyclohexane (alpha-HCH), tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",.beta.-Hexachlorocyclohexane,"beta-Hexachlorocyclohexane (beta-HCH), tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",.delta.-Hexachlorocyclohexane,"delta-Hexachlorocyclohexane (delta-HCH), tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide","2,4,6-Trichlorophenol","2,4,6-Trichlorophenol, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Aldrin,"Aldrin, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Azobenzene,"Azobenzene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Carbazole,"Carbazole, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide","Chlordane, technical, and/or chlordane metabolites","Chlordane plus degradates, tissue (wet mass basis), maximum summation",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Chlorthal-dimethyl,"Dimethyl tetrachloroterephthalate (DCPA), tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide","DDT/DDD/DDE, sum of p,p' & o,p' isomers","Dichlorodiphenyltrichloroethane plus degredates (DDT/DDD/DDE, p,p' + o,p' isos), tissue (wet mass basis), maximum summation",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Dieldrin,"Dieldrin, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Endrin,"Endrin, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Heptachlor,"Heptachlor, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Heptachlor epoxide,"Heptachlor epoxide, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Hexachlorobenzene,"Hexachlorobenzene (HCB), bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Hexachlorobenzene,"Hexachlorobenzene (HCB), tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Methoxychlor,"p,p'-Methoxychlor, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Mirex,"Mirex, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Oxychlordane,"Oxychlordane, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Pentachloroanisole,"Pentachloroanisole, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Pentachloroanisole,"Pentachloroanisole, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Pentachloronitrobenzene,"Pentachloronitrobenzene (PCNB), bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",Toxaphene,"Toxaphene, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",cis-Chlordane,"cis-Chlordane, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",cis-Nonachlor,"cis-Nonachlor, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",gamma-HCH (Lindane),"Lindane, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide","o,p'-DDD","1-Chloro-2-[2,2-dichloro-1-(4-chlorophenyl)ethyl]benzene (o,p'-DDD), tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide","o,p'-DDE","1-Chloro-2-[2,2-dichloro-1-(4-chlorophenyl)ethenyl]benzene (o,p'-DDE), tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide","o,p'-DDT","1-Chloro-2-[2,2,2-trichloro-1-(4-chlorophenyl)ethyl]benzene (o,p'-DDT), tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide","o,p'-Methoxychlor","o,p'-Methoxychlor, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide","p,p'-DDD","1,1-Dichloro-2,2-bis(p-chlorophenyl)ethane (p,p'-DDD), tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide","p,p'-DDE","1-Chloro-4-[2,2-dichloro-1-(4-chlorophenyl)ethenyl]benzene (p,p'-DDE), tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide","p,p'-DDT","1-Chloro-4-[2,2,2-trichloro-1-(4-chlorophenyl)ethyl]benzene (p,p'-DDT), tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",p-Chloro-m-cresol,"4-Chloro-3-methylphenol, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",p-Dichlorobenzene,"1,4-Dichlorobenzene, bed sediment (dry mass basis), smaller than 2 millimeters, wet sieved (native water, field), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",trans-Chlordane,"trans-Chlordane, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,"Organics, Pesticide",trans-Nonachlor,"trans-Nonachlor, tissue (wet mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,Physical,Barometric pressure,"Barometric pressure (BP), uncorrected",81,81,1998-05-05,2001-09-05
+USGS-15266300,Physical,Color,"Color, water, filtered",43,43,1952-05-21,1977-09-09
+USGS-15266300,Physical,"Hardness, Ca, Mg","Hardness as calcium carbonate, water",82,82,1952-05-21,2001-09-05
+USGS-15266300,Physical,"Hardness, non-carbonate","Noncarbonate hardness as calcium carbonate, water, filtered, field",35,35,1998-10-07,2001-09-05
+USGS-15266300,Physical,"Hardness, non-carbonate","Noncarbonate hardness as calcium carbonate, water, filtered, laboratory",29,29,1999-03-03,2001-09-05
+USGS-15266300,Physical,"Hardness, non-carbonate","Noncarbonate hardness as calcium carbonate, water, unfiltered, field",45,45,1952-05-21,1971-03-24
+USGS-15266300,Physical,"Height, gage","Gage height, above datum",124,62,1969-05-05,2014-08-27
+USGS-15266300,Physical,Specific conductance,"Specific conductance, water, unfiltered, normalized to 25 degrees Celsius",142,142,1952-05-21,2001-09-05
+USGS-15266300,Physical,Specific conductance,"Specific conductance, water, unfiltered, normalized to 25 degrees Celsius, laboratory",37,37,1998-10-07,2001-09-05
+USGS-15266300,Physical,"Stream flow, instantaneous","Discharge, instantaneous",358,179,1967-03-29,2020-08-05
+USGS-15266300,Physical,Stream width measure,Width of stream,114,114,1980-07-29,2020-08-05
+USGS-15266300,Physical,Surface area,Surface area,67,67,1952-05-21,1974-09-23
+USGS-15266300,Physical,"Temperature, air","Temperature, air",81,81,1998-05-05,2020-08-05
+USGS-15266300,Physical,"Temperature, water","Temperature, water",230,230,1952-05-21,2020-08-05
+USGS-15266300,Physical,Total dissolved solids,"Dissolved solids flux, water, filtered",63,63,1967-03-29,2001-09-05
+USGS-15266300,Physical,Total dissolved solids,"Dissolved solids, water, filtered",80,80,1952-05-21,2001-09-05
+USGS-15266300,Physical,Total dissolved solids,"Dissolved solids, water, filtered, dried at 105 degrees Celsius",4,4,1970-12-22,1971-08-26
+USGS-15266300,Physical,Total dissolved solids,"Dissolved solids, water, filtered, dried at 180 degrees Celsius",37,37,1998-10-07,2001-09-05
+USGS-15266300,Physical,Total dissolved solids,"Dissolved solids, water, filtered, sum of constituents",80,80,1952-05-21,2001-09-05
+USGS-15266300,Physical,Total suspended solids,"Suspended solids, water",4,4,1970-12-22,1971-08-26
+USGS-15266300,Physical,Turbidity,"Turbidity (legacy), Jackson candle turbidimeter",11,11,1971-08-26,1974-06-19
+USGS-15266300,Physical,pH,"pH, water, unfiltered, field",127,127,1952-05-21,2001-09-05
+USGS-15266300,Physical,pH,"pH, water, unfiltered, laboratory",37,37,1998-10-07,2001-09-05
+USGS-15266300,Radiochemical,Alpha particle,"Gross alpha radioactivity as natural uranium (U-nat), suspended sediment (dry mass basis), natural uranium curve",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Alpha particle,"Gross alpha radioactivity as natural uranium (U-nat), suspended sediment, natural uranium curve",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Alpha particle,"Gross alpha radioactivity as natural uranium (U-nat), water, filtered, natural uranium curve",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Alpha particle,"Gross alpha radioactivity, suspended sediment (dry mass basis), natural uranium curve",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Alpha particle,"Gross alpha radioactivity, suspended sediment, natural uranium curve",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Alpha particle,"Gross alpha radioactivity, water, filtered, natural uranium curve",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Beta particle,"Gross beta radioactivity, suspended sediment (dry mass basis), cesium-137 curve",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Beta particle,"Gross beta radioactivity, suspended sediment (dry mass basis), strontium-90/yttrium-90 curve",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Beta particle,"Gross beta radioactivity, suspended sediment, cesium-137 curve",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Beta particle,"Gross beta radioactivity, suspended sediment, strontium-90/yttrium-90 curve",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Beta particle,"Gross beta radioactivity, water, filtered, cesium-137 curve",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Beta particle,"Gross beta radioactivity, water, filtered, strontium-90/yttrium-90 curve",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Radium-226,"Radium-226, water, filtered, radon method",4,4,1970-12-22,1971-08-26
+USGS-15266300,Radiochemical,Thorium-232,"Thorium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,Radiochemical,Uranium,"Uranium, bed sediment (dry mass basis), smaller than 62.5 microns, wet sieved (field), complete digestion",1,1,1998-05-05,1998-05-05
+USGS-15266300,Radiochemical,Uranium,"Uranium, tissue (dry mass basis), recoverable",1,1,1998-05-05,1998-05-05
+USGS-15266300,Radiochemical,Uranium,"Uranium, water, filtered, extraction fluorometric method",4,4,1970-12-22,1971-08-26
+USGS-15266300,Sediment,Bed sediment particle size,"Bed sediment, smaller than 0.0625 millimeters sieve diameter",1,1,1998-05-05,1998-05-05
+USGS-15266300,Sediment,Suspended Sediment Concentration (SSC),Suspended sediment concentration,74,74,1967-09-02,2001-09-05
+USGS-15266300,Sediment,Suspended Sediment Load,Suspended sediment flux,74,74,1967-09-02,2001-09-05
+USGS-15266300,Sediment,Suspended sediment particle size,"Suspended sediment, smaller than 0.0625 millimeters fall diameter (deionized water)",3,3,1969-06-25,1971-07-14
+USGS-15266300,Sediment,Suspended sediment particle size,"Suspended sediment, smaller than 0.0625 millimeters sieve diameter",20,20,1969-02-27,2001-09-05
+USGS-15266300,Sediment,Suspended sediment particle size,"Suspended sediment, smaller than 0.125 millimeters fall diameter (deionized water)",3,3,1969-06-25,1971-07-14
+USGS-15266300,Sediment,Suspended sediment particle size,"Suspended sediment, smaller than 0.125 millimeters sieve diameter",2,2,1969-02-27,1974-09-23
+USGS-15266300,Sediment,Suspended sediment particle size,"Suspended sediment, smaller than 0.25 millimeters fall diameter (deionized water)",3,3,1969-06-25,1971-07-14
+USGS-15266300,Sediment,Suspended sediment particle size,"Suspended sediment, smaller than 0.25 millimeters sieve diameter",2,2,1969-02-27,1974-09-23
+USGS-15266300,Sediment,Suspended sediment particle size,"Suspended sediment, smaller than 0.5 millimeters fall diameter (deionized water)",3,3,1969-06-25,1971-07-14
+USGS-15266300,Sediment,Suspended sediment particle size,"Suspended sediment, smaller than 0.5 millimeters sieve diameter",2,2,1969-02-27,1974-09-23
+USGS-15266300,Sediment,Suspended sediment particle size,"Suspended sediment, smaller than 1 millimeter fall diameter (deionized water)",1,1,1969-06-25,1969-06-25
+USGS-15266300,Sediment,Suspended sediment particle size,"Suspended sediment, smaller than 1 millimeter sieve diameter",2,2,1969-02-27,1974-09-23
+USGS-15266300,Sediment,Suspended sediment particle size,"Suspended sediment, smaller than 2 millimeters sieve diameter",1,1,1969-02-27,1969-02-27
