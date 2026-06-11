@@ -6,7 +6,7 @@ library(dplyr)
 library(tidyr)
 library(magrittr)
 library(ggplot2)
-library(factoextra)
+#library(factoextra)
 
 #WATER QUALITY DATAFRAME + CLEANUP
 
@@ -186,43 +186,43 @@ files <- c(
   "Arsenic Kenai River Baseline Data (1).csv"
 )
 
-chemical_name <- c("Temperature", "Turbidity", "Total Suspended Solids", "Specific Conductance", 
+chemical_name <- c("Temperature","Turbidity", "Total Suspended Solids", "Specific Conductance", 
                    "pH", "Fecal Coliform", "BTEX", "Phosphorous", "Nitrate/Nitrite", 
                    "Magnesium", "Iron", "Calcium", "Zinc", "Lead", "Copper", "Chromium", 
                    "Cadmium", "Arsenic")
 
+
+
 wq_data_frame <- bind_rows(
   lapply(seq_along(files), function(i) {
-    
     dat <- read_csv(files[i], show_col_types = FALSE)
-    
     data.frame(
       date = dat$activity_start_date,
       chemical_name = chemical_name[i],
       concentration = dat$result_measure_value,
       unit = dat$result_measure_measure_unit_code
     )
-    
   })
 )
 
+wq_wide <- as.data.table(wq_data_frame)
 
-View(wq_data_frame)
+wq_wide[, Year := as.numeric(substr(date, 1, 4))]
 
+wq_wide <- wq_wide[Year >= 2000 & Year <= 2014]
 
-wq_wide <- wq_data_frame %>%
-  group_by(date, chemical_name) %>%
-  summarise(
-    concentration = mean(concentration, na.rm = TRUE),
-    .groups = "drop"
-  ) %>%
+setorder(wq_wide, Year, date)
+wq_wide[, seq_id := rowid(Year, chemical_name)]
+
+wq_wide_all <- wq_wide %>%
+  select(Year, seq_id, chemical_name, concentration) %>%
   pivot_wider(
     names_from = chemical_name,
     values_from = concentration, 
-    values_fill = 0 )
+    values_fill = 0
+  )
 
-
-wq_wide <- wq_wide %>%
+wq_wide_all <- wq_wide_all %>%
   mutate(
     across(
       where(is.numeric),
@@ -230,34 +230,25 @@ wq_wide <- wq_wide %>%
     )
   )
 
-#WQ WIDE DATA TABLE FOR USE IN CLUSTERING AND PCA
+setDT(wq_wide_all)
 
-setDT(wq_wide)
-
-wq_wide[, Year := as.numeric(substr(date, 1, 4))]
-
-wq_wide[, date := NULL]
-
-setcolorder(wq_wide, "Year")
-
-wq_wide <- wq_wide[Year >= 2000 & Year <= 2011]
-
-#making wq_wide into a data frame with just these components 
-wq_wide <- wq_wide[, c("Year","Total Suspended Solids", "Turbidity", "Temperature"), with = FALSE]
-
-View(wq_wide)
-#this wq_wide is our data frame that we can use for clustering. 
-
-wq_wide <- wq_wide %>%
-  group_by(Year) %>%
-  filter(n() == 2) %>%
-  ungroup()
+if ("seq_id" %in% names(wq_wide_all)) {
+  wq_wide_all[, seq_id := NULL]
+}
 
 
 
-#THIS IS WQ DATA WITHOUT DATE. IF YOU WANT IT WITH DARE JUST GO ABOVE TO VIEW WQ WIDE AND THE 
-#LINES THAT MAKE THAT DF. 
-pca_data <- wq_wide[, -1]
+wq_wide_all[, run_order := rowid(Year)]
+
+
+#pca_data <- wq_wide_all[, !c("Year"), with = FALSE]
+
+#print(paste("Total observations kept:", nrow(wq_wide_all)))
+#View(wq_wide_all)
+
+
+
+
 
 
 
@@ -273,9 +264,9 @@ kenai_chinook_and_sockeye_total_run <- read_csv("kenai-chinook-and-sockeye-total
 
 setDT(kenai_chinook_and_sockeye_total_run)
 
-#filter_king_total <- filter_king_total[
-#as.numeric(Year) >= 2000 & as.numeric(Year) < 2014
-#]
+filter_king_total <- filter_king_total[
+as.numeric(Year) >= 2000 & as.numeric(Year) < 2014
+]
 
 filter_king_total <- kenai_chinook_and_sockeye_total_run[Species == "Chinook" & River == "Kenai River" &
                                                            as.numeric(Year) >= 2000 & as.numeric(Year) < 2014  ]
@@ -293,31 +284,34 @@ chinook_escapement <- data.frame(
 
 #CREATING COMPLETE DATAFRAME (Water Quality + Chinook)
 
-setDT(chinook_escapement)
-setDT(wq_wide)
+chinook_dt <- as.data.table(chinook_escapement)
 
-wq_wide[, seq_id := rowid(Year)]
-chinook_escapement[, seq_id := rowid(Year)]
+setorder(chinook_dt, Year, RunType)
+
+chinook_dt[, run_order := rowid(Year)]
 
 #chinook_yearly_avg <- chinook_escapement[Year >= 2001 & Year <= 2010, 
                                        #  .(avg_fish_count = mean(fish_count)), 
                                         # by = Year]
-                                        
-
 #merged_df_chinook <- merge(wq_wide, chinook_yearly_avg, by = "Year", all = FALSE)
 
+merged_chronological <- merge(wq_wide_all, chinook_dt, 
+                              by= c("Year", "run_order"),
+                              all= FALSE)
 
-merged_df_chinook <- merged_df_chinook[Year >= 2001 & Year <= 2010]
+merged_chronological <- merged_chronological[Year >= 2001 & Year <= 2010]
+
+pca_data <- merged_chronological[, !c("Year", "date", "run_order", "RunType")]
 
 merged_df_chinook <- merged_df_chinook[, !c("Year", "seq_id"), with = FALSE]
 
 
 
-wq_wide[, seq_id := rowid(Year)]
+#wq_wide[, seq_id := rowid(Year)]
 
-pca_chinook_all_data <- merged_df_chinook
+#pca_chinook_all_data <- merged_df_chinook
 
-scaled_data <- scale(pca_chinook_all_data)
+#scaled_data <- scale(pca_chinook_all_data)
 
 #setkey(chinook_escapement, Year)
 #setkey(wq_wide, Year)
