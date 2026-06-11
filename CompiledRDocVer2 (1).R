@@ -301,10 +301,19 @@ merged_chronological <- merge(wq_wide_all, chinook_dt,
 
 merged_chronological <- merged_chronological[Year >= 2001 & Year <= 2010]
 
-pca_data <- merged_chronological[, !c("Year", "date", "run_order", "RunType")]
+pca_data <- merged_chronological[, !c("Year", "run_order", "RunType", "seq_id", "Cadmium", "BTEX")]
 
-merged_df_chinook <- merged_df_chinook[, !c("Year", "seq_id"), with = FALSE]
+pca_data <- pca_data %>%
+  mutate(
+    across(
+      where(is.numeric),
+      ~ ifelse(is.na(.x) | is.nan(.x), 0, .x)
+    )
+  )
 
+scaled_data <- scale(pca_data)
+
+View(scaled_data)
 
 
 #wq_wide[, seq_id := rowid(Year)]
@@ -387,7 +396,7 @@ plot(cumsum(pve), xlab="Principal Component",
 #CLUSTERING
 
 components = pr.out$x[, 1:5] # however many components used
-Knum = 2 # number of clusters
+Knum = 3 # number of clusters
 
 km.out = kmeans(components, Knum, nstart=20) 
 
@@ -401,7 +410,7 @@ avg_sil
 #set.seed(1)
 
 #fviz_nbclust(components, kmeans, method = "silhouette", k.max = 8) +
-  labs(subtitle = "Silhouette Method for Optimal K")
+  #labs(subtitle = "Silhouette Method for Optimal K")
 
 
 #fviz_nbclust(merged_df_chinook, kmeans, method = "wss", k.max = 30)
@@ -418,13 +427,13 @@ for (i in 1:Knum) {
 
 #Plotting chinook data clusters
 
-km8 <- kmeans(components, 8, nstart = 20)
+km8 <- kmeans(components, 3, nstart = 20)
 print(km8)
 
 plot_df <- data.frame(
   PC1 = components[,1],
   PC2 = components[,2],
-  cluster = factor(km4$cluster)
+  cluster = factor(km.out$cluster)
 )
 
 ggplot(plot_df,
@@ -436,7 +445,7 @@ ggplot(plot_df,
 #################
 
 # Turn PCA chemical data back into a data.table
-pca_dt <- as.data.table(pca_chinook_all_data)
+pca_dt <- as.data.table(scaled_data)
 
 #add cluster assignments from your k-means model as a new column
 pca_dt[, cluster := km.out$cluster]
