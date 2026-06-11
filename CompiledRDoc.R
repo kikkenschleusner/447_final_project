@@ -2,6 +2,9 @@ library(readr)
 library(data.table)
 library(cluster)
 library(readxl)
+library(dplyr)
+library(tidyr)
+library(magrittr)
 
 #WATER QUALITY DATAFRAME + CLEANUP
 
@@ -129,7 +132,7 @@ cadmium_unit <-  Cadmium$result_measure_measure_unit_code
 Arsenic <- read_csv("Arsenic Kenai River Baseline Data (1).csv")
 #View(Arsenic_Kenai_River_Baseline_Data_1_)
 
-date_aresenic <- Arsenic$activity_start_date
+date_arsenic <- Arsenic$activity_start_date
 measured_arsenic <- Arsenic$result_measure_value 
 arsenic_unit <-  Arsenic$result_measure_measure_unit_code
 
@@ -140,7 +143,7 @@ arsenic_unit <-  Arsenic$result_measure_measure_unit_code
 #date_susp_solids, date_turbidity, date_temp))
 
 date_list <- list(as.integer(
-  date_aresenic, date_cadmium,date_chromium, 
+  date_arsenic, date_cadmium,date_chromium, 
   date_copper, date_lead, date_zinc, date_calcium, date_iron,
   date_magnesium, date_nitrate_nitrite, date_phosphorous, 
   date_benzene, date_fecal, date_ph, date_conductance, 
@@ -150,7 +153,7 @@ date_list <- list(as.integer(
 matches <- logical(length(date_list))
 
 for (i in seq_along(date_list)) {
-  matches[i] <- identical(as.integer(date_aresenic), date_list[[i]])
+  matches[i] <- identical(as.integer(date_arsenic), date_list[[i]])
 }
 
 matches
@@ -160,21 +163,35 @@ matches
 
 #make data frame for all chemicals across dates
 
-chemicals_kwf <- c(measured_arsenic, measured_cadmium,measured_chromium, 
-                   measured_copper, measured_lead, measured_zinc, measured_calcium, measured_iron,
-                   measured_magnesium, measured_nitrate_nitrite, measured_phosphorous, 
-                   measured_benzene, measured_fecal, measured_ph, measured_conductance, 
-                   measured_susp_solids, measured_turbidity, measured_temp)
 
-chemical_name <- list(c("Aresenic", "Cadmium", "Chromium", "Copper", "Lead", "Zinc", "Calcium", 
-                        "Iron", "Magnesium", "Nitrate_nitrite", "Phosphorous", "Benzene", "Fecal Coliform", 
-                        "Ph", "Conductance", "Suspended Solids", "Turbidity", "Surface Temperature"))
+#####
 
-chemicals_unit <- c(arsenic_unit, cadmium_unit,chromium_unit, 
-                    copper_unit, lead_unit, zinc_unit, calcium_unit, iron_unit,
-                    magnesium_unit, nitrate_nitrite_unit, phosphorous_unit, 
-                    benzene_unit, fecal_unit, ph_unit, conductance_unit, 
-                    susp_solids_unit, turbidity_unit, temp_unit)
+#This code below is unnecessary, no?
+
+#chemicals_kwf <- c(measured_arsenic, measured_cadmium,measured_chromium, 
+              #    measured_copper, measured_lead, measured_zinc, measured_calcium, measured_iron,
+              #     measured_magnesium, measured_nitrate_nitrite, measured_phosphorous, 
+              #     measured_benzene, measured_fecal, measured_ph, measured_conductance, 
+               #    measured_susp_solids, measured_turbidity, measured_temp)
+
+#chemical_name <- list(c("Arsenic", "Cadmium", "Chromium", "Copper", "Lead", "Zinc", "Calcium", 
+                     #   "Iron", "Magnesium", "Nitrate_nitrite", "Phosphorous", "Benzene", "Fecal Coliform", 
+                     #   "Ph", "Conductance", "Suspended Solids", "Turbidity", "Surface Temperature"))
+
+#chemical_name <- c("Surface Temperature", "Turbidity", "Total Suspended Solids", "Specific Conductance", 
+                 #  "pH", "Fecal Coliform", "BTEX", "Phosphorous", "Nitrate/Nitrite", 
+                #   "Magnesium", "Iron", "Calcium", "Zinc", "Lead", "Copper", "Chromium", 
+                #   "Cadmium", "Arsenic")
+
+#chemicals_unit <- c(temp_unit, turbidity_unit, susp_solids_unit, conductance_unit, ph_unit, 
+                  #  fecal_unit, benzene_unit, phosphorous_unit, nitrate_nitrite_unit, magnesium_unit,
+                  #  iron_unit, calcium_unit, )
+
+#chemicals_unit <- c(arsenic_unit, cadmium_unit,chromium_unit, 
+                   # copper_unit, lead_unit, zinc_unit, calcium_unit, iron_unit,
+                  #  magnesium_unit, nitrate_nitrite_unit, phosphorous_unit, 
+                  #  benzene_unit, fecal_unit, ph_unit, conductance_unit, 
+                 #   susp_solids_unit, turbidity_unit, temp_unit)
 
 #Where is data_long??
 #sample_features <- data_long %>%
@@ -183,6 +200,7 @@ chemicals_unit <- c(arsenic_unit, cadmium_unit,chromium_unit,
  #   values_from = concentration  # fills the cells with the concentrations
 #  )
 
+############################
 
 files <- c(
   "Temperature, water Kenai River Baseline Data.csv",
@@ -205,10 +223,14 @@ files <- c(
   "Arsenic Kenai River Baseline Data (1).csv"
 )
 
-chemical_name <- c("Aresenic", "Cadmium", "Chromium", "Copper", "Lead", "Zinc", "Calcium", 
-                   "Iron", "Magnesium", "Nitrate_nitrite", "Phosphorous", "Benzene", "Fecal Coliform", 
-                   "Ph", "Conductance", "Suspended Solids", "Turbidity", "Surface Temperature")
+#chemical_name <- c("Arsenic", "Cadmium", "Chromium", "Copper", "Lead", "Zinc", "Calcium", 
+                 #  "Iron", "Magnesium", "Nitrate_nitrite", "Phosphorous", "Benzene", "Fecal Coliform", 
+                #   "Ph", "Conductance", "Suspended Solids", "Turbidity", "Surface Temperature")
 
+chemical_name <- c("Temperature", "Turbidity", "Total Suspended Solids", "Specific Conductance", 
+                   "pH", "Fecal Coliform", "BTEX", "Phosphorous", "Nitrate/Nitrite", 
+                   "Magnesium", "Iron", "Calcium", "Zinc", "Lead", "Copper", "Chromium", 
+                   "Cadmium", "Arsenic")
 
 wq_data_frame <- bind_rows(
   lapply(seq_along(files), function(i) {
@@ -264,8 +286,6 @@ setcolorder(wq_wide, "Year")
 View(wq_wide)
 #this wq_wide is our data frame that we can use for clustering. 
 
-View(wq_wide)
-
 #THIS IS WQ DATA WITHOUT DATE. IF YOU WANT IT WITH DARE JUST GO ABOVE TO VIEW WQ WIDE AND THE 
 #LINES THAT MAKE THAT DF. 
 pca_data <- wq_wide[, -1]
@@ -318,7 +338,8 @@ setkey(wq_wide, Year)
 #merged_df_chinook <- wq_wide[chinook_escapement, on = .(date), roll = TRUE]
 merged_df_chinook <- wq_wide[chinook_escapement, on = .(Year)]
 merged_df_chinook <- merged_df_chinook %>% 
-  select(-date)
+  select(-Year)
+  
 pca_chinook_all_data <- merged_df_chinook[, -1]
 
 
@@ -354,6 +375,7 @@ plot(cumsum(pve), xlab="Principal Component",
 #PCA for data frame that includes CHINOOK Escapement 
 
 pr.out <- prcomp(pca_chinook_all_data, scale=TRUE)
+pr.out2 <- pr.out
 names(pr.out)
 dim(pr.out$x)
 
@@ -382,7 +404,7 @@ plot(cumsum(pve), xlab="Principal Component",
 #CLUSTERING
 
 components = pr.out$x[, 1:5] # however many components used
-Knum = 8 # number of clusters, can optimize this later
+Knum = 7 # number of clusters
 
 km.out = kmeans(components, Knum, nstart=20) 
 
@@ -391,6 +413,15 @@ sil_score = silhouette(km.out$cluster, dist(components))
 avg_sil = mean(sil_score[, 3])
 avg_sil
 
+##### CHOICE IN K (automated)
+pca_clustering_df <- pr.out2$x[, 1:6]
+
+fviz_nbclust(pca_clustering_df, kmeans, method = "silhouette", k.max = 12) +
+  labs(subtitle = "Silhouette Method for Optimal K")
+
+
+fviz_nbclust(merged_df_chinook, kmeans, method = "wss", k.max = 30)
+#####
 for (i in 1:Knum) {
   row_indices <- which(km.out$cluster == i)
   
@@ -418,4 +449,4 @@ print(chemical_centroids)
 
 
 
-
+head(wq_data_frame)
