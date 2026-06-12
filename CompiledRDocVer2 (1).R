@@ -6,7 +6,7 @@ library(dplyr)
 library(tidyr)
 library(magrittr)
 library(ggplot2)
-#library(factoextra)
+library(factoextra)
 
 #WATER QUALITY DATAFRAME + CLEANUP
 
@@ -293,37 +293,20 @@ scaled_data <- scale(pca_data)
 View(scaled_data)
 
 
-#wq_wide[, seq_id := rowid(Year)]
-
-#pca_chinook_all_data <- merged_df_chinook
-
-#scaled_data <- scale(pca_chinook_all_data)
-
-#setkey(chinook_escapement, Year)
-#setkey(wq_wide, Year)
-
-#merged_df_chinook <- wq_wide[chinook_escapement, on = .(Year)]
-#merged_df_chinook <- merged_df_chinook[Year >= 2001 & Year <= 2010]
-#merged_df_chinook <- merged_df_chinook %>% 
-  #select(-Year)
-
-
-#%>%
-  #select(-RunType)
-
 
 
 ################################################
 
 #PCA For Water Quality + Water Quality with Chinook Escapement
+#PCA for data frame that includes CHINOOK Escapement 
 
-#PCA on just water quality 
 pr.out <- prcomp(scaled_data, scale=TRUE)
+pr.out2 <- pr.out
 names(pr.out)
 dim(pr.out$x)
 
 pr.out$rotation
-biplot(pr.out, main = "Water Quality", scale=0, xlim=c(-5,5), ylim=c(-5,5))
+biplot(pr.out, main = "Water Quality + Chinook Escapement", scale=0, xlim=c(-5,5), ylim=c(-5,5))
 pr.out$x
 
 pr.out$sdev
@@ -333,38 +316,12 @@ pve=pr.var/sum(pr.var)
 pve
 plot(pve, xlab="Principal Component", 
      ylab="Proportion of Variance Explained",
-     main = "Water Quality Proportion of Variance Explained",
+     main = "Water Quality + Chinook Escapement PVE",
      ylim=c(0,1),type='b')
 plot(cumsum(pve), xlab="Principal Component", 
-     ylab="Cumulative Proportion of Variance Explained", 
-     main = "Water Quality Cumulative Proportion of Variance Explained",
+     ylab="Cumulative Proportion of Variance Explained",
+     main = "Water Quality + Chinook Escapement Cumulative PVE",
      ylim=c(0,1),type='b')
-
-
-#PCA for data frame that includes CHINOOK Escapement 
-
-#pr.out <- prcomp(scaled_data, scale=TRUE)
-#pr.out2 <- pr.out
-#names(pr.out)
-#dim(pr.out$x)
-
-#pr.out$rotation
-#biplot(pr.out, main = "Water Quality + Chinook Escapement", scale=0, xlim=c(-5,5), ylim=c(-5,5))
-#pr.out$x
-
-#pr.out$sdev
-#pr.var=pr.out$sdev^2
-#pr.var
-#pve=pr.var/sum(pr.var)
-#pve
-#plot(pve, xlab="Principal Component", 
-     #ylab="Proportion of Variance Explained",
-     #main = "Water Quality + Chinook Escapement PVE",
-     #ylim=c(0,1),type='b')
-#plot(cumsum(pve), xlab="Principal Component", 
-     #ylab="Cumulative Proportion of Variance Explained",
-     #main = "Water Quality + Chinook Escapement Cumulative PVE",
-     #ylim=c(0,1),type='b')
 
 
 
@@ -372,7 +329,7 @@ plot(cumsum(pve), xlab="Principal Component",
 
 #CLUSTERING
 
-components = pr.out$x[, 1:5] # however many components used
+components = pr.out$x[, 1:7] # however many components used
 Knum = 3 # number of clusters
 
 km.out = kmeans(components, Knum, nstart=20) 
@@ -384,28 +341,26 @@ avg_sil
 
 ##### CHOICE IN K (automated)
 
-#set.seed(1)
+set.seed(1)
 
-#fviz_nbclust(components, kmeans, method = "silhouette", k.max = 8) +
-  #labs(subtitle = "Silhouette Method for Optimal K")
+fviz_nbclust(components, kmeans, method = "silhouette", k.max = 8) +
+  labs(subtitle = "Silhouette Method for Optimal K")
 
 
-#fviz_nbclust(merged_df_chinook, kmeans, method = "wss", k.max = 30)
+fviz_nbclust(merged_df_chinook, kmeans, method = "wss", k.max = 30)
+
 #####
 for (i in 1:Knum) {
   row_indices <- which(km.out$cluster == i)
   
   #print whatever we want to see from each cluster, I was thinking dates but we can change it
-  cluster_data <- pca_chinook_all_data[row_indices, "fish_count"]
+  cluster_data <- scaled_data[row_indices, "fish_count"]
   
   print(cluster_data)
   cat("\n")
 }
 
 #Plotting chinook data clusters
-
-km8 <- kmeans(components, 3, nstart = 20)
-print(km8)
 
 plot_df <- data.frame(
   PC1 = components[,1],
