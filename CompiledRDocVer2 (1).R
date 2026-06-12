@@ -152,18 +152,9 @@ date_list <- list(as.integer(
   date_susp_solids, date_turbidity, date_temp 
 ))
 
-matches <- logical(length(date_list))
-
-for (i in seq_along(date_list)) {
-  matches[i] <- identical(as.integer(date_arsenic), date_list[[i]])
-}
-
-matches
-#output is TRUE indicating that all dates are the same 
 
 
-
-#make data frame for all chemicals across dates
+#data frame for all chemicals across dates
 
 files <- c(
   "Temperature, water Kenai River Baseline Data.csv",
@@ -241,16 +232,6 @@ if ("seq_id" %in% names(wq_wide_all)) {
 wq_wide_all[, run_order := rowid(Year)]
 
 
-#pca_data <- wq_wide_all[, !c("Year"), with = FALSE]
-
-#print(paste("Total observations kept:", nrow(wq_wide_all)))
-#View(wq_wide_all)
-
-
-
-
-
-
 
 ######################################################
 
@@ -290,10 +271,6 @@ setorder(chinook_dt, Year, RunType)
 
 chinook_dt[, run_order := rowid(Year)]
 
-#chinook_yearly_avg <- chinook_escapement[Year >= 2001 & Year <= 2010, 
-                                       #  .(avg_fish_count = mean(fish_count)), 
-                                        # by = Year]
-#merged_df_chinook <- merge(wq_wide, chinook_yearly_avg, by = "Year", all = FALSE)
 
 merged_chronological <- merge(wq_wide_all, chinook_dt, 
                               by= c("Year", "run_order"),
@@ -341,7 +318,7 @@ View(scaled_data)
 #PCA For Water Quality + Water Quality with Chinook Escapement
 
 #PCA on just water quality 
-pr.out <- prcomp(pca_data, scale=TRUE)
+pr.out <- prcomp(scaled_data, scale=TRUE)
 names(pr.out)
 dim(pr.out$x)
 
@@ -366,28 +343,28 @@ plot(cumsum(pve), xlab="Principal Component",
 
 #PCA for data frame that includes CHINOOK Escapement 
 
-pr.out <- prcomp(pca_chinook_all_data, scale=TRUE)
-pr.out2 <- pr.out
-names(pr.out)
-dim(pr.out$x)
+#pr.out <- prcomp(scaled_data, scale=TRUE)
+#pr.out2 <- pr.out
+#names(pr.out)
+#dim(pr.out$x)
 
-pr.out$rotation
-biplot(pr.out, main = "Water Quality + Chinook Escapement", scale=0, xlim=c(-5,5), ylim=c(-5,5))
-pr.out$x
+#pr.out$rotation
+#biplot(pr.out, main = "Water Quality + Chinook Escapement", scale=0, xlim=c(-5,5), ylim=c(-5,5))
+#pr.out$x
 
-pr.out$sdev
-pr.var=pr.out$sdev^2
-pr.var
-pve=pr.var/sum(pr.var)
-pve
-plot(pve, xlab="Principal Component", 
-     ylab="Proportion of Variance Explained",
-     main = "Water Quality + Chinook Escapement PVE",
-     ylim=c(0,1),type='b')
-plot(cumsum(pve), xlab="Principal Component", 
-     ylab="Cumulative Proportion of Variance Explained",
-     main = "Water Quality + Chinook Escapement Cumulative PVE",
-     ylim=c(0,1),type='b')
+#pr.out$sdev
+#pr.var=pr.out$sdev^2
+#pr.var
+#pve=pr.var/sum(pr.var)
+#pve
+#plot(pve, xlab="Principal Component", 
+     #ylab="Proportion of Variance Explained",
+     #main = "Water Quality + Chinook Escapement PVE",
+     #ylim=c(0,1),type='b')
+#plot(cumsum(pve), xlab="Principal Component", 
+     #ylab="Cumulative Proportion of Variance Explained",
+     #main = "Water Quality + Chinook Escapement Cumulative PVE",
+     #ylim=c(0,1),type='b')
 
 
 
